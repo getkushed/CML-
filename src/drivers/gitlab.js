@@ -147,7 +147,7 @@ class Gitlab {
     const legacyEndpoint = `/projects/${projectPath}`;
     const endpoint = `/user/runners`;
 
-    const { id, runners_token: runnersToken } = await this.request({
+    const { id, runners_token: runnersToken = null } = await this.request({
       endpoint: legacyEndpoint
     });
 
