@@ -49,6 +49,8 @@ describe('Non Enviromental tests', () => {
 
   test('Runner token', async () => {
     const output = await client.runnerToken();
+
+    expect(output).not.toBeUndefined();
     expect(output.length >= 20).toBe(true);
   });
 
